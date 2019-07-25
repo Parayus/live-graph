@@ -22,8 +22,7 @@ fig = pp.figure(1,figsize=(7,4))
 ax1 = fig.add_subplot(1,1,1)
 pp.title('data')
 def animate(i):
-    data=[]
-    data2=[]
+    
     try:
         conn = sqlite3.connect("testDB.db")
         cur = conn.cursor()
